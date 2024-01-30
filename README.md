@@ -48,7 +48,7 @@ To reproduce the experiments conducted in this research, 4 Jupyter notebooks fro
 3. [run_dlcc](notebooks/run_dlcc.ipynb) runs the DLCC evaluation framework with the previously obtained embedding variants. This step is based on both [DL-TC-Generator](https://github.com/janothan/DL-TC-Generator) and [dl-evaluation-framework](https://github.com/janothan/dl-evaluation-framework) original repositories, and further details and instructions are contained in the notebook;
 4. [run_geval](notebooks/run_geaval.ipynb) runs the GEval evaluation framework with the previously obtained embedding variants. This step is based on the [Evaluation-Framework](https://github.com/mariaangelapellegrino/Evaluation-Framework) original repository, and further details and instructions are contained in the notebook.
 
-With the known limitation that binary vectors produced with the autoencoding architecture from [near-lossless-binarization](https://github.com/tca19/near-lossless-binarization) are nondeterministic, the compact VEC files were also stored in the [resources](resources) folder. The versions of Python packages used in these notebooks are listed in the [requirements](requirements.txt). 
+With the known limitation that binary vectors produced with the autoencoding architecture from [near-lossless-binarization](https://github.com/tca19/near-lossless-binarization) are nondeterministic, the compact VEC files were also stored in the [resources](resources) folder. All notebooks ran in Python 3.8.3 and the versions of relevant packages are listed in the [requirements](requirements.txt). 
 
 ### Towards Transparency
 
