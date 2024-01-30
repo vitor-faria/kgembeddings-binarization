@@ -43,12 +43,12 @@ This repository has as main objectives the **reproducibility** of the experiment
 
 To reproduce the experiments conducted in this research, 4 Jupyter notebooks from the [notebooks](notebooks) folder are relevant:
 
-1. [list_goldenset_entities](notebooks/list_goldenset_entities.ipynb) collects all DBpedia entities present in GEval and DLCC gold standard files, for further entity filtering. Sets of entities from both evaluation frameworks are saved as pickle files, which are available in the `resources` and are used in the subsequent steps;
+1. [list_goldenset_entities](notebooks/list_goldenset_entities.ipynb) collects all DBpedia entities present in GEval and DLCC gold standard files, for further entity filtering. Sets of entities from both evaluation frameworks are saved as pickle files, which are available in the [resources](resources/entities) and are used in the subsequent steps;
 2. [get_vectors_pipeline](notebooks/get_vectors_pipeline.ipynb) downloads original KGE vector files from KGvec2go and produce the variants used in the experiment. This step is mostly based on the C binarizer method from [near-lossless-binarization](https://github.com/tca19/near-lossless-binarization) and the notebook contains instructions on how to run it;
 3. [run_dlcc](notebooks/run_dlcc.ipynb) runs the DLCC evaluation framework with the previously obtained embedding variants. This step is based on both [DL-TC-Generator](https://github.com/janothan/DL-TC-Generator) and [dl-evaluation-framework](https://github.com/janothan/dl-evaluation-framework) original repositories, and further details and instructions are contained in the notebook;
-4. [run_geval](notebooks/run_geaval.ipynb) runs the GEval evaluation framework with the previously obtained embedding variants. This step is based on the [Evaluation-Framework](https://github.com/mariaangelapellegrino/Evaluation-Framework) original repository, and further details and instructions are contained in the notebook.
+4. [run_geval](notebooks/run_geval.ipynb) runs the GEval evaluation framework with the previously obtained embedding variants. This step is based on the [Evaluation-Framework](https://github.com/mariaangelapellegrino/Evaluation-Framework) original repository, and further details and instructions are contained in the notebook.
 
-With the known limitation that binary vectors produced with the autoencoding architecture from [near-lossless-binarization](https://github.com/tca19/near-lossless-binarization) are nondeterministic, the compact VEC files were also stored in the [resources](resources) folder. All notebooks ran in Python 3.8.3 and the versions of relevant packages are listed in the [requirements](requirements.txt). 
+With the known limitation in mind that binary vectors produced with the autoencoding architecture from [near-lossless-binarization](https://github.com/tca19/near-lossless-binarization) are nondeterministic, the compact VEC files were also stored in the [resources](resources/VEC). All notebooks ran in Python 3.8.3 and the versions of relevant packages are listed in the [requirements](requirements.txt). 
 
 ### Towards Transparency
 
